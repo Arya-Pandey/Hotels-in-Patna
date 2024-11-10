@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Bihar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('BG.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1000px;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .description {
+            flex: 1;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .description h2 {
+            color: #FFF8DC;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        .description p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .highlight-label {
+            color: #FFD700;
+            font-size: 1.1em;
+        }
+
+        .hotel-image {
+            width: 500px;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        a.back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #008080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        a.back-button:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <h2>The Royal Bihar</h2>
+            <p><span class="highlight-label">Description:</span> Located in Patna, 12 km from Patna Railway Station, The Royal Bihar offers rooms with free WiFi access. The property features a restaurant, a terrace, an indoor pool, and a hot tub, providing guests with a range of amenities for relaxation and comfort. The hotel offers room service and a 24-hour front desk to meet guest needs.</p>
+            <p>All rooms are equipped with air conditioning, a fridge, a minibar, a kettle, a shower, free toiletries, and a wardrobe. Each room has a private bathroom with a hairdryer and slippers. Breakfast options include buffet, à la carte, and continental selections.</p>
+            <p><span class="highlight-label">Nearest Airport:</span> Jay Prakash Narayan Airport is 4 km away.</p>
+
+            <p><span class="highlight-label">Contact:</span> +91 1234567890</p>
+            <p><span class="highlight-label">Rating:</span> ★★★★☆</p>
+            <a href="interface.html" class="back-button">Back to Hotels</a>
+        </div>    
+        <img src="The Royal Bihar.jpg" alt="The Royal Bihar Image" class="hotel-image">
+    </div>
+</body>
+</html>

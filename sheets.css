@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container with Background */
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Background Image Styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('back.jpg') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(70%);
+}
+/* Positioning the Search Icon */
+.search-container {
+    position: absolute;
+    top: 15%; /* Adjusted to move it slightly higher */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensures the search bar stays on top */
+    margin-bottom: 30px; /* Adds space below the search bar */
+}
+.search-bar {
+    width: 100%;
+    padding: 15px 40px 15px 15px; /* Adjust padding for icon space */
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+}
+/* Static Hotel Images Container */
+/* Hotel Images Container */
+.hotel-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20%;
+    flex-wrap: wrap; /* Allows wrapping if there are many images */
+}
+
+/* Hotel Card Styling */
+.hotel-card {
+    text-align: center;
+    border: 2px solid #ddd; /* Light border around each card */
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Adds a slight hover effect */
+}
+
+/* Hotel Image Styling */
+.hotel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popUp 0.5s forwards;
+}
+
+/* Hotel Name Styling */
+.hotel-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hover Effect on Card */
+.hotel-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.hotel-images-container img:nth-child(1) { animation-delay: 0.1s; }
+.hotel-images-container img:nth-child(2) { animation-delay: 0.2s; }
+.hotel-images-container img:nth-child(3) { animation-delay: 0.3s; }
+.hotel-images-container img:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes popUp {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 10px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Highlight the headings */
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+
+/* Suggestions dropdown styling */
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%; /* Position right below the search bar */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure it appears on top */
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Add scroll if too many suggestions */
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}

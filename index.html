@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="xyz">
+            
+            <label for="gmail">Gmail:</label>
+            <input type="email" id="gmail" name="gmail" required placeholder="example@gmail.com">
+            
+            <button type="button" onclick="validateLogin()">Login</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+    <script src="javas.js"></script>
+</body>
+</html>

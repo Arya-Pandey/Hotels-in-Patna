@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Tree Premier</title>
+    <style>
+        /* Background Image Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('BG.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Overlay for Improved Readability */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1000px;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Description Section */
+        .description {
+            flex: 1;
+            color: #fff; /* Text color for better contrast */
+            font-weight: bold;
+        }
+
+        .description h2 {
+            color: #1E90FF;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        .description p {
+            line-height: 1.6;
+            margin: 15px 0; /* Increased spacing between sections */
+        }
+
+        /* Highlight Labels */
+        .highlight-label {
+            color: #FFD700; /* Gold color for emphasis */
+            font-size: 1.1em;
+        }
+
+        /* Image Section */
+        .hotel-image {
+            width: 500px;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Styling */
+        a.back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #1E90FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        a.back-button:hover {
+            background-color: #104E8B; /* Darker shade of blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Description on the Left -->
+        <div class="description">
+            <h2>Lemon Tree Premier</h2>
+            <p><span class="highlight-label">Description:</span> This Upper Midscale hotel ushers you into 105 plush and well-appointed rooms and suites. Together with a multi-cuisine coffee shop– Citrus Café with a show kitchen, a rejuvenating spa and salon- Fresco, a fully equipped gym, a rooftop swimming pool, and an Indian restaurant, the hotel offers a refreshing alternative to both business and leisure travelers as well as city dwellers. Large glass doors and a beautiful fountain in the driveway invite you into a contemporary lobby accentuated by a serene Buddha sculpture and remarkable modern art.
+            Situated in the heart of the business and entertainment hub of the city, Lemon Tree Premier, Patna is located on Exhibition Road, just a 5-minute walk from the historic Gandhi Maidan.</p>
+            
+            <p><span class="highlight-label">Contact:</span> +91 1234567890</p>
+            <p><span class="highlight-label">Rating:</span> ★★★★☆</p>
+            <a href="interface.html" class="back-button">Back to Hotels</a>
+        </div>
+        
+        <!-- Hotel Image on the Right -->
+        <img src="Lemon Tree Premier.jpg" alt="Lemon Tree Premier" class="hotel-image">
+    </div>
+</body>
+</html>
